@@ -46,6 +46,7 @@ namespace AZH2223_solucion_practicaGIT
             this.bCalcular.TabIndex = 11;
             this.bCalcular.Text = "Calcular";
             this.bCalcular.UseVisualStyleBackColor = true;
+            this.bCalcular.Click += new System.EventHandler(this.bCalcular_Click_1);
             // 
             // txtPrecio
             // 
