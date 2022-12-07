@@ -19,6 +19,7 @@ namespace AZH2223_solucion_practicaGIT
 
         private void bCalcular_Click_1(object sender, EventArgs e)
         {
+            // AZH2223 Introduzco este comentario para volver a hacer el punto 18 de la práctica
             // Práctica realizada por AZH2223
             string textoTelegrama;
             char tipoTelegrama = 'o';
