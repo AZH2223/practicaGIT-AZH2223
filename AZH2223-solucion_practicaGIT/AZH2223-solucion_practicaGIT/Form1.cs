@@ -19,28 +19,38 @@ namespace AZH2223_solucion_practicaGIT
 
         private void bCalcular_Click_1(object sender, EventArgs e)
         {
+            // AZH2223 Introduzco este comentario para volver a hacer el punto 18 de la práctica
+            // Práctica realizada por AZH2223
             string textoTelegrama;
             char tipoTelegrama = ' ';
             int numPalabras = 0;
             double coste;
+
+            // Práctica realizada por AZH2223
             //Leo el telegrama
             textoTelegrama = txtTelegrama.Text;
+
             // telegrama urgente?
             if (rbUrgente.Checked)
                 tipoTelegrama = 'u';
+
+            // Práctica realizada por AZH2223
             //Obtengo el número de palabras que forma el telegrama
-            numPalabras = textoTelegrama.Length;
+            numPalabras = textoTelegrama.Split(' ', ',', '.', ':', ';').Length - 1;
+
             //Si el telegrama es ordinario
             if (rbOrdinario.Checked)
             {
                 tipoTelegrama = 'o';
                 if (numPalabras <= 10)
-                    coste = 25;
+                    coste = 2.5;
                 else
-                    coste = 0.5 * numPalabras;
+                    coste = 2.5 + 0.5 * (numPalabras - 10);
             }
 
             else
+
+            // Práctica realizada por AZH2223
             //Si el telegrama es urgente
             if (tipoTelegrama == 'u')
                 if (numPalabras <= 10)
